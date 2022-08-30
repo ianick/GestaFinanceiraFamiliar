@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet author="anick" id="1871">
+        <createTable tableName="Receita">
+            <column autoIncrement="false" name="id" type="UUID">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="descricao" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="valor" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="data" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <insert tableName="Receita">
+            <column name="id" valueNumeric=" b9f13c95-d38d-5669-a7c6-874be297df03"/>
+            <column name="descricao" value="Imoveis"/>
+            <column name="data" value="25/09/2013"/>
+            <column name="valor" value="2000"/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>
