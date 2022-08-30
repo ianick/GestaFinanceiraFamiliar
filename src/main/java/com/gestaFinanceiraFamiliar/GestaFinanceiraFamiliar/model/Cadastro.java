@@ -3,7 +3,6 @@ package com.gestaFinanceiraFamiliar.GestaFinanceiraFamiliar.model;
 import lombok.*;
 
 import javax.persistence.Column;
-
 @Setter
 @Getter
 public abstract class Cadastro {
